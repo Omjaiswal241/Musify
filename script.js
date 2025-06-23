@@ -123,4 +123,11 @@ next.addEventListener("click", () => {
     }
 })
 
+// Add an event to volume
+document.querySelector(".range").getElementsByTagName("input")["0"].addEventListener("change",
+    (e) => {
+        currentsong.volume = parseInt(e.target.value) / 100
+    }
+)
+
 main();
