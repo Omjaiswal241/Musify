@@ -1,0 +1,32 @@
+.border{
+     
+}
+.flex
+{
+     display: flex;
+}
+.justify-center{
+     justify-content: center;
+}
+.items-center
+{
+     align-items:center;
+}
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 10px; /* or height: 10px for horizontal */
+}
+
+::-webkit-scrollbar-track {
+    background: #000; /* Black track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333; /* Darker black thumb */
+    border-radius: 5px;
+}
+
+/* Optional: On hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
