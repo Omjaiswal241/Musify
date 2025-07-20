@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Clone-music for everyone</title>
+    <title>Musify-music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
 </head>
@@ -16,7 +16,9 @@
                 <img width="30px" src="close.svg" alt="" class="invert">
             </div>
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img width="110" class="invert" src="logo.svg" alt=""></div>
+                <div class="logo"><img width="30" class="invert" src="newlogo.svg" alt="">
+                    <h1>Musify</h1>
+                </div>
                 <ul>
                     <li><img class="invert" src="home.svg" alt="home">Home</li>
                     <li><img class="invert" src="search.svg" alt="Search">Search</li>
@@ -70,10 +72,10 @@
                     <button class="loginbtn">Log in</button>
                 </div>
             </div>
-            <div class="spotifyplaylist">
-                <h1>Spotify Playlists</h1>
+            <div class="Musifyplaylist">
+                <h1>Musify Playlists</h1>
                 <div class="cardContainer">
-                    <div class="card">
+                    <div data-folder="Relax" class="card">
                         <div class="play">
                             <svg viewBox="0 0 24 32" fill="black" width="28" height="28" stroke="black">
                                 <path
@@ -81,11 +83,11 @@
                                     stroke-width="1.5" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
-                        <h2>Happy Hits!</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+                        <img src="feelgood.jpeg" alt="">
+                        <h2>Feel Good</h2>
+                        <p>Your daily dose of happiness</p>
                     </div>
-                    <div class="card">
+                    <div data-folder="Feelgood" class="card">
                         <div class="play">
                             <svg viewBox="0 0 24 32" fill="black" width="28" height="28" stroke="black">
                                 <path
@@ -93,9 +95,9 @@
                                     stroke-width="1.5" stroke-linejoin="round" />
                             </svg>
                         </div>
-                        <img src="https://i.scdn.co/image/ab67706f00000002b55b6074da1d43715fc16d6d" alt="">
-                        <h2>Happy Hits!</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+                        <img src="relax.jpeg" alt="">
+                        <h2>Relax</h2>
+                        <p>Chill SuperMixx</p>
                     </div>
                 </div>
                 <div class="playbar">

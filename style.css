@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+:root {
+     --a: 0;
+}
+
 * {
      margin: 0px;
      padding: 0px;
@@ -33,6 +37,17 @@ body {
      gap: 15px;
      padding-top: 14px;
      font-weight: bold;
+}
+
+.logo {
+     display: flex;
+     align-items: center;
+     gap: 8px;
+     font-style: italic;
+}
+
+.logo img {
+     width: 25px;
 }
 
 .bg-black {
@@ -120,7 +135,7 @@ body {
      gap: 10px;
      flex-wrap: wrap;
      margin: 30px;
-     max-height: 75vh;
+     max-height: 60vh;
      overflow-y: auto;
 }
 
@@ -130,6 +145,13 @@ body {
      border-radius: 5px;
      background-color: #252525;
      position: relative;
+     transition: all .9s;
+}
+
+.card:hover {
+     background-color: rgb(105, 103, 103);
+     cursor: pointer;
+     --a: 1;
 }
 
 .card>* {
@@ -150,8 +172,9 @@ body {
      justify-content: center;
      align-items: center;
      position: absolute;
-     top: 168px;
+     bottom: 88px;
      right: 17px;
+     opacity: var(--a);
 }
 
 .buttons>* {
@@ -226,6 +249,7 @@ body {
      justify-content: center;
      align-items: center;
      gap: 14px;
+     cursor: pointer;
 }
 
 .SongList ul {
@@ -273,7 +297,7 @@ body {
      background: black;
      border-radius: 10px;
      position: absolute;
-     bottom: 0;
+     bottom: 8px;
      margin: 6px;
      cursor: pointer;
 }
@@ -310,6 +334,11 @@ body {
      justify-content: center;
      align-items: center;
      gap: 12px;
+     cursor: pointer;
+}
+
+.range input {
+     cursor: pointer;
 }
 
 .abovebar {
@@ -390,7 +419,7 @@ body {
      }
 
      .card {
-          width: 44vw;
+          width: 55vw;
      }
 
      .cardContainer {
@@ -411,14 +440,39 @@ body {
      }
 
      .cardContainer {
-          max-height: unset;
+          max-height: 50vh;
           overflow-y: unset;
           margin-bottom: 35vh;
      }
 }
 
-@media (max-width:400px) {
+@media (max-width:500px) {
      .card {
-          width: 84vw;
+          width: 100%;
      }
+
+     .header>* {
+          padding: 2px;
+     }
+
+     .buttons>* {
+          margin: 0 6px;
+     }
+
+     .header {
+          padding: 7px;
+     }
+
+     .Musifyplaylist h1 {
+          padding: 4px;
+     }
+
+     .library {
+          height: 85vh;
+     }
+
+     .left {
+          width: 100vw;
+     }
+
 }
